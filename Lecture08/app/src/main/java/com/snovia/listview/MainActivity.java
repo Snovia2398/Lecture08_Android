@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         friendArrayList.add("Abid");
         friendArrayList.add("Arslan");
 
-        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,friendList);
+        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,friendArrayList);
         listView.setAdapter(arrayAdapter);
 
     }
