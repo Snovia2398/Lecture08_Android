@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d("You clicked",friendArrayList.get(position));
+                Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+                intent.putExtra("Friend Name",friendArrayList.get(position));
+                startActivity(intent);
             }
         });
 
